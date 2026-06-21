@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品说明 · 世界杯投注</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Georgia", "Times New Roman", "宋体", serif;
+            background-color: #fbf8f2;
+            color: #2e2a24;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+        }
+
+        .page-wrap {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #fffdf7;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .page-wrap {
+                padding: 1.8rem 1.2rem;
+            }
+        }
+
+        /* hero 区域 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #e6dfd2;
+            padding-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-weight: 500;
+            font-size: 2.4rem;
+            letter-spacing: 0.02em;
+            color: #473e33;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #7a6e5e;
+            font-style: italic;
+        }
+
+        /* 摘要卡片 */
+        .summary-card {
+            background: #f3efe7;
+            border-left: 5px solid #a4927c;
+            padding: 1.6rem 2rem;
+            border-radius: 0 16px 16px 0;
+            margin: 2.2rem 0 2.6rem 0;
+        }
+
+        .summary-card p {
+            font-size: 1.05rem;
+        }
+
+        .summary-card strong {
+            color: #5e5040;
+        }
+
+        /* 亮点网格 */
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+            margin: 2.6rem 0;
+        }
+
+        @media (max-width: 600px) {
+            .highlights {
+                grid-template-columns: 1fr;
+                gap: 1.4rem;
+            }
+        }
+
+        .highlight-item {
+            background: #fcfaf5;
+            padding: 1.6rem 1.4rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+            border: 1px solid #ece5d8;
+        }
+
+        .highlight-item h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #4d4236;
+            margin-bottom: 0.6rem;
+            border-bottom: 1px dashed #d8cfbf;
+            padding-bottom: 0.3rem;
+        }
+
+        .highlight-item p {
+            font-size: 0.97rem;
+            color: #3f3a33;
+        }
+
+        /* 引用 / 提示框 */
+        .callout {
+            background: #f1ede3;
+            border-radius: 24px 8px 24px 8px;
+            padding: 1.8rem 2.2rem;
+            margin: 2.8rem 0;
+            position: relative;
+        }
+
+        .callout::before {
+            content: "📌 使用建议";
+            display: block;
+            font-weight: 500;
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+            color: #6f624f;
+            margin-bottom: 0.6rem;
+        }
+
+        .callout p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 访问说明块 */
+        .access-note {
+            background: transparent;
+            border: 2px dotted #c9beab;
+            padding: 1.5rem 1.8rem;
+            border-radius: 20px;
+            margin: 2.6rem 0;
+        }
+
+        .access-note h4 {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #5f5342;
+            margin-bottom: 0.8rem;
+        }
+
+        /* FAQ 摘要 */
+        .faq-mini {
+            margin: 2.6rem 0 1.2rem 0;
+            border-top: 1px solid #e3dacb;
+            padding-top: 2rem;
+        }
+
+        .faq-mini h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #53483b;
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item {
+            padding: 0.9rem 0;
+            border-bottom: 1px solid #efe8dd;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #4d3f30;
+        }
+
+        .faq-a {
+            margin-top: 0.25rem;
+            color: #5e5547;
+            font-size: 0.96rem;
+        }
+
+        /* inline link */
+        a {
+            color: #7f6b50;
+            text-decoration: none;
+            border-bottom: 1px solid #d2c3ae;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #3f3223;
+            border-bottom-color: #7f6b50;
+        }
+
+        .footer-meta {
+            margin-top: 3.2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #9b8f7c;
+            border-top: 1px solid #ede6da;
+            padding-top: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <div class="hero">
+        <h1>世界杯投注</h1>
+        <div class="sub">稳定入口 · 产品使用说明</div>
+    </div>
+
+    <!-- 摘要 -->
+    <div class="summary-card">
+        <p>本节目的为提供清晰的 <strong>产品说明</strong>，帮助有兴趣的参与者理解 <a href="https://official-worldcupwager.com">世界杯投注</a> 的基本逻辑、适用场景与注意事项。以下内容基于公开信息与常见使用模式编写，不构成投资或博弈建议，请根据自身情况审慎判断。</p>
+    </div>
+
+    <!-- 亮点区域，两个卡片 -->
+    <div class="highlights">
+        <div class="highlight-item">
+            <h3>聚焦赛程节点</h3>
+            <p>围绕世界杯赛程中各阶段比赛，参与者可以根据对球队状态、历史数据的分析，形成自己的判断框架。平台提供清晰的对阵信息与基础数据参考，帮助用户基于事实做出选择。</p>
+        </div>
+        <div class="highlight-item">
+            <h3>持续可用的入口</h3>
+            <p>作为长期维护的线上入口，该站点保持稳定的访问路径，避免因临时变动影响使用体验。用户可通过固定的 <a href="https://official-worldcupwager.com">世界杯投注</a> 链接进入，无需频繁寻找镜像或备用地址。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 callout -->
+    <div class="callout">
+        <p>如果你是初次接触此类活动，建议先观察小组赛阶段的对阵形势，结合球队近期表现及伤病报告，形成自己的分析习惯。不必急于参与，把了解规则和界面逻辑作为第一步。</p>
+        <p>另外，每次使用前建议确认网络环境安全，避免在公共设备上保存个人偏好信息。合理规划时间与预算，保持理性参与。</p>
+    </div>
+
+    <!-- 访问说明，引入第二个链接 -->
+    <div class="access-note">
+        <h4>关于访问与页面结构</h4>
+        <p>该网站以简洁的功能布局为主，所有核心模块均可从主页直达。<a href="https://official-worldcupwager.com">世界杯投注</a> 页面作为主要交互入口，在赛事期间会同步更新赛程与相关选项。页面不包含弹窗广告或强制跳转，操作路径较为直接。</p>
+        <p>如果你遇到加载缓慢的情况，可尝试刷新或更换网络后重试。网站未对特定区域做访问限制，但请遵守当地法律法规。</p>
+    </div>
+
+    <!-- FAQ 摘要（非完整问答，而是提炼常见疑问） -->
+    <div class="faq-mini">
+        <h2>常见要点摘要</h2>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：是否需要注册账户？</div>
+            <div class="faq-a">通常需要完成基础注册以记录个人偏好与选择，但具体流程以页面指引为准。建议使用常用邮箱，并设置独立密码。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：赛前多长时间可以查看选项？</div>
+            <div class="faq-a">一般会在每场比赛开赛前 24–48 小时放出相关选项，部分焦点赛事可能更早开放。随时留意首页公告即可。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：是否提供历史数据参考？</div>
+            <div class="faq-a">平台内置基础统计模块，涵盖近期交锋记录与球队排名趋势，可作为分析参考，但不应作为唯一决策依据。</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q：遇到疑问如何获取帮助？</div>
+            <div class="faq-a">页面底部通常设有联系方式或常见问题入口。你也可以先查阅说明文档，多数操作问题都能在其中找到解答。</div>
+        </div>
+    </div>
+
+    <!-- 结尾说明，再次包含链接 -->
+    <p style="margin: 2rem 0 0.2rem 0; font-size: 0.98rem; color: #5f5549;">
+        更多细节和实时更新，请直接访问 <a href="https://official-worldcupwager.com">世界杯投注</a> 查看。
+    </p>
+
+    <div class="footer-meta">
+        <p>本页面为产品说明页 · 仅供信息参考 · 请遵守当地法律与个人风险承受能力</p>
+    </div>
+
+</div>
+</body>
+</html>
